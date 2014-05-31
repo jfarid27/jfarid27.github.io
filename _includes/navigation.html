@@ -1,0 +1,26 @@
+<div id="header">
+
+  <div class="row">
+    <div class="medium-12 columns">
+
+      <div class="row">
+        <div class="medium-6 columns">
+          <header id="banner">
+            <h1>
+              <a href="/">Local Minima</a>
+            </h1>
+          </header>
+        </div>
+        <div class="medium-6 columns">
+       
+          {% for site in site.navigation %}
+           <a href="{{site.url}}" class="small button">{{site.text}}</a>
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+  <hr>
+  </div>
+</div>
+

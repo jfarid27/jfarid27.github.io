@@ -1,0 +1,14 @@
+name: Local Minima
+pygments: true
+markdown: kramdown
+
+navigation:
+- text: Blog
+  url: /index.html
+- text: About
+  url: /about/index.html
+- text: Code
+  url: /code/index.html
+- text: Questions
+  url: /questions/index.html
+
