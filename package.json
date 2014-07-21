@@ -1,0 +1,19 @@
+{
+  "name": "blog",
+  "version": "0.0.0",
+  "description": "jfarid27.github.io ==================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css":"lessc css/custom/src/style.less > css/custom/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfarid27/jfarid27.github.io.git"
+  },
+  "author": "J. Farid",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/jfarid27/jfarid27.github.io/issues"
+  }
+}

@@ -1,4 +1,5 @@
 name: Local Minima
+description: My personal repository of musings and ideas...
 pygments: true
 markdown: kramdown
 
@@ -8,7 +9,7 @@ navigation:
 - text: About
   url: /about/index.html
 - text: Code
-  url: /code/index.html
+  url: https://github.com/jfarid27
 - text: Questions
   url: /questions/index.html
 

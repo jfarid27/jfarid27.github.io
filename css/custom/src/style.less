@@ -1,0 +1,38 @@
+
+@import "/theme.less";
+
+@leaders: #header>h1;
+
+.global {
+    background-color: @background;
+}
+
+.leading-text {
+    &:extend(@{leaders});
+    color: @lead;
+}
+
+.strong-text {
+    color: @strong;
+}
+
+.baseline-text {
+    color: @soft;
+}
+
+.emphasized-text {
+    color: @striking;
+}
+
+body {
+    .global();
+}
+
+#footer {
+    margin-bottom: 40px;
+}
+
+div.content {
+    height: 85%;
+}
+
