@@ -41,6 +41,28 @@ Sadly, one would be hard pressed to find a mother and father willing to have eno
 (50 should be enough right?), let alone hold their environments constant enough to allow them to all reach the exact 
 same levels of abilities at exactly the same time. This is problem faced by anyone who uses statistics to infer causality.
 
-**Selection bias and exploiting Central Limit Theorem**
+**Selection bias and exploiting Law of Large Numbers**
 
+Mastering Metrics begins by diving directly into selection bias and defining its manifestation in means across separate
+groups. Drilled into the reader in the initial pages is the concept of *ceteris paribus*, the notion that comparing variables
+between two groups is only sensible in a world where all other variables are held constant. Yet researchers are limited in
+their abilities to control all variables, since we cannot hope to be able to control all possible variables in an experiment.
+Interestingly enough, a dualism appears through the Law of Large Numbers. Rather than control all variables, one can randomly
+select individuals to apply a treatment to forcing the means of variables that are not of interest to be equal on average.
+By doing so, the effect of these variables on outcome measures are minimized, allowing researchers to compare the differences
+of means without signal from the effects of variables that are not of interest contaminating the difference. An understanding
+of selection bias is key for people attempting to infer causal effects on outcomes. The introduction gives readers useful
+introductory intuition on the theory, along with the first of the five major tools used by 'metricians.
 
+**Controlling bias**
+
+After the introduction to selection bias, the next chapters highlight the other effective tools for practitioners caught in a 
+world where truly random trials cannot exist. Thorough discussion through through a number of key research in the field describes
+how and why in many cases, random trials are difficult, and how researchers control for these biases in the absence of truly
+random trials. Along with the random trial itself, the other four tools are Regression with Control Variables, Instrumental
+Variables and the 2 Stage Least Squares Regression, Regression Discontinuity, and Differences of Differences methods. 
+
+Each method is discussed through a host of research projects and the insight added by their uses. In many cases, comparison
+of the findings are compared when bias isn't accounted for, showing mistakes that can lead people who use statistics astray.
+
+**Politics, Policies, and Prejudices**
