@@ -15,10 +15,10 @@ have been met.
 
 [Mastering Metrics](http://www.amazon.com/Mastering-Metrics-Path-Cause-Effect/dp/0691152845) is a book
 that caught my attention through [an episode of EconTalk](http://www.econtalk.org/archives/2014/12/joshua_angrist.html),
-that sits directly in the space of introductory Causal Inference. Written by two well known Economatricians,
+that sits directly in the space of introductory Causal Inference. Written by two well known econometricians,
 the book gives insight into the art of using statistics to determine whether outcomes are affected by known
 variables, and teaches readers that significance through regression is far from the only truth. Through
-a walkthrough of the five most important tools used by economatricians to effectively determine how outcomes
+a walkthrough of the five most important tools used by econometricians to effectively determine how outcomes
 are affected by variables, the readers can expect to have a reasonable knowledge of issues in using statistics
 as the only known truth, and should easily be able to springboard into a course on regression or experiment design.
 
@@ -39,7 +39,8 @@ to use for their study. Then simply send half to ivy league, and half to the oth
 the differences in means. If its positive, we can then gladly go on a marketing campaign for the winner of the test.
 Sadly, one would be hard pressed to find a mother and father willing to have enough children to apease the researcher 
 (50 should be enough right?), let alone hold their environments constant enough to allow them to all reach the exact 
-same levels of abilities at exactly the same time. This is problem faced by anyone who uses statistics to infer causality.
+same levels of abilities at exactly the same time. The problem, the lack of true comparability, is the main focus of causal
+inference, and is problem faced by anyone who uses statistics to infer causality.
 
 **Selection bias and exploiting Law of Large Numbers**
 
@@ -60,9 +61,8 @@ After the introduction to selection bias, the next chapters highlight the other 
 world where truly random trials cannot exist. Thorough discussion through through a number of key research in the field describes
 how and why in many cases, random trials are difficult, and how researchers control for these biases in the absence of truly
 random trials. Along with the random trial itself, the other four tools are Regression with Control Variables, Instrumental
-Variables and the 2 Stage Least Squares Regression, Regression Discontinuity, and Differences of Differences methods. 
+Variables and the 2 Stage Least Squares Regression, Regression Discontinuity, and Differences of Differences methods. Each regression method tours a number of key research studies, each with its own particular set of research constraints. The approach shows readers not only the how, but the why behind each particular method's application, and gives an added intuition behind what each regression does in accounting for bias. 
 
-Each method is discussed through a host of research projects and the insight added by their uses. In many cases, comparison
-of the findings are compared when bias isn't accounted for, showing mistakes that can lead people who use statistics astray.
+**But its only the beginning**
 
-**Politics, Policies, and Prejudices**
+The presentation of the material makes it an excellent side read for anyone interested in using data to make decisions. Stressed throughout the text is an insistence to attempt to recognize biased data and remove it as efficiently as possible. This focus sets a baseline for assessing the quality of research, even in a world where truly unbiased data is unlikely. Econometricians straddle the line between policies and science, so critical research can have long lasting influence on policies in the real world. While a true statistical text won't discuss this, it is important to try to assess causal relationships using proper research designs. Otherwise, the data can lead us astray, even with strong statistical significance. This book is clearly a winner at giving readers an introduction to the techniques used in causal inference to give Econometricians the best chance to design strong research, but a look into how to identify broken designs. While it won't be a true regression textbook, readers interested in using data to make decisions will not only enjoy the tour of research design used in economics, but find these common designs parallel any field where data is used to make decisions.
