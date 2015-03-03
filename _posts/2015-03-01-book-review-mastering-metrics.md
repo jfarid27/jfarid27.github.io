@@ -58,10 +58,9 @@ introductory intuition on the theory, along with the first of the five major too
 **Controlling bias**
 
 After the introduction to selection bias, the next chapters highlight the other effective tools for practitioners caught in a 
-world where truly random trials cannot exist. Thorough discussion through through a number of key research in the field describes
-how and why in many cases, random trials are difficult, and how researchers control for these biases in the absence of truly
-random trials. Along with the random trial itself, the other four tools are Regression with Control Variables, Instrumental
-Variables and the 2 Stage Least Squares Regression, Regression Discontinuity, and Differences of Differences methods. Each regression method tours a number of key research studies, each with its own particular set of research constraints. The approach shows readers not only the how, but the why behind each particular method's application, and gives an added intuition behind what each regression does in accounting for bias. 
+world where truly random trials cannot exist. Thorough discussion through a number of key research studies describes
+how in many cases, random trials are difficult. Given a particular set of research constraints, bias introduction hinders the data in each study, removing the possibility of being able to compare groups in the context of all things equal. Through this, a tour of five main tools to combat the lack of true equality are shown: Regression with Control Variables, Instrumental
+Variables and the 2 Stage Least Squares Regression, Regression Discontinuity, and Differences of Differences methods. The approach shows readers not only the how, but the why behind each particular method's application, and gives an added intuition behind what each regression does in accounting for bias. 
 
 **But its only the beginning**
 
