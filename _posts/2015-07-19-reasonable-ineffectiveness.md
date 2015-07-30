@@ -38,7 +38,7 @@ help in proving statements correct by mapping dependent types to other similar d
 other forms as well in homotopy type theory that help the task, but even in this theory, axioms are taken that are central to the entire system,
 univalence being one of them.
 
-In short, in the massive space of programs that can exist, few can be proven correct. Large swaths of program systems
+In the massive space of programs that can exist, few can be proven correct. Large swaths of program systems
 are used without any real indication that they are correct. The nature of programs and proving theorems is largely a search for a needle in a haystack
 and it should be no surprise that failures in systems occur. An inconsisteny in a large theoretical system is just as expected as a bug in a code.
 In some sense, while we can guarantee the correctness of some programs, they are mostly ineffective at solving problems, given the ability to create
