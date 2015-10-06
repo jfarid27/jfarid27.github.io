@@ -30,7 +30,7 @@ We observe a variable, then observe the next variable in order, one by one. What
 "updated" depending on the observed value of the previous random variable. For a really good introductory explanation on markov chains,
 [check out this visual introduction if you want a great explaination.](http://setosa.io/blog/2014/07/26/markov-chains/) 
 
-For an even better explaination, read Y[1].
+For an even better explaination, read Yueng [1].
 
 ###Metropolis-Hastings and simulating a Random Variable
 
@@ -65,12 +65,9 @@ beauty of the Metropolis-Hastings algorithm is that in a very simple program, we
 Now finally, we take a million samples using the Metropolis-Hastings Algorithm, taking a million samples. In it, we make the next state
 choice simply by going left or right from the current state by a small distance. The plot is below.
 
-Does it look "Normal" enough?
+Does it look Normal enough?
 
 <iframe width="100%" height="450" src="//jsfiddle.net/jrab227/r8cn8jef/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-
-
-
 
 ###Further Reading
 
@@ -82,9 +79,9 @@ Does it look "Normal" enough?
 
 \* There are actually mathematical details into the definition of a random variable. IANAM (I am not a mathematician), but there
 are topological issues with the domain of probability functions, along with satisfying conditions known as Komolgorov
-axioms. There's actually a nice definition in the first few chapters of C&B[2] but even then, the formal definition has some quirks that 
+axioms. There's actually a nice definition in the first few chapters of Casella and Berger [2] but even then, the formal definition has some quirks that 
 only mathematicians need to deal with in proving theorems.
 
 ** This isn't entirely true. You actually need a condition that, when going from state A to B, the probability of going from A to B is the
-same as going from B to A. There is a correction factor mentioned in C&G[3] that is multiplied by the transition odds, but for our case, 
+same as going from B to A. There is a correction factor mentioned in Chib and Greenburg [3] that is multiplied by the transition odds, but for our case, 
 since this condition is met, the factor is just 1. 
