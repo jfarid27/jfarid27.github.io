@@ -1,10 +1,10 @@
 ---
 layout : post
-title  : Markov Chain Monte Carlo simulation in 10 Minutes
+title  : Markov Chain Monte Carlo Simulation in 10 Minutes
 snip   : When all else fails... simulate everything
 ---
 
-##Markov Chain Monte Carlo simulation in 10 Minutes  
+##Markov Chain Monte Carlo Simulation in 10 Minutes  
 
 ###What is a random variable?
 
