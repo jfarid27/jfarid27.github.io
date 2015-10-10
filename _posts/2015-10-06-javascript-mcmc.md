@@ -37,7 +37,7 @@ For an even better explaination, read Yueng [1].
 Have you ever wondered how exactly random numbers are generated in your favorite language? 
 Most have some support for generating samples from a uniform distribution. Javascript specifically has Math.random() 
 to help with generating samples that are between 0 and 1, but how do we generate a list of numbers that appear as if
-they are sampled from from say, a normal distribution? This is where the Metropolis-Hastings algorithm comes in.
+they are sampled from say, a normal distribution? This is where the Metropolis-Hastings algorithm comes in.
 
 Simply put, if we have a target distribution we want to sample from, and some way to generate samples from a uniform distribution,
 the Metropolis-Hastings algorithm gives us a way to generate samples from the target distribution. We'll work with a simple standard
