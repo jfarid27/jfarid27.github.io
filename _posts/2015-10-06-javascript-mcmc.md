@@ -4,9 +4,9 @@ title  : Markov Chain Monte Carlo Simulation in 10 Minutes
 snip   : When all else fails... simulate everything
 ---
 
-##Markov Chain Monte Carlo Simulation in 10 Minutes  
+## Markov Chain Monte Carlo Simulation in 10 Minutes  
 
-###What is a random variable?
+### What is a random variable?
 
 A random variable can have many different formal definitions, but let's avoid technicalities for the moment and give an intuitive
 definition:
@@ -23,7 +23,7 @@ The non-deterministic nature of random variables makes them widely studied area,
 may happen in the future given data from today is essential in our daily lives so naturally random variables are a perfect way to model the
 future with information today. Of course models aren't perfect, but something is always better than nothing. 
 
-###What is a Markov Chain?
+### What is a Markov Chain?
 
 A Markov Chain is a slight extension of a random variable. Again avoiding technicalities, a markov chain is simply a sequence of random variables.
 We observe a variable, then observe the next variable in order, one by one. What makes them special is that the probabilities can be 
@@ -32,7 +32,7 @@ We observe a variable, then observe the next variable in order, one by one. What
 
 For an even better explaination, read Yueng [1].
 
-###Metropolis-Hastings and simulating a Random Variable
+### Metropolis-Hastings and simulating a Random Variable
 
 Have you ever wondered how exactly random numbers are generated in your favorite language? 
 Most have some support for generating samples from a uniform distribution. Javascript specifically has Math.random() 
@@ -69,7 +69,7 @@ Does it look Normal enough?
 
 <iframe width="100%" height="450" src="//jsfiddle.net/jrab227/r8cn8jef/1/embedded/result,js" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-###Further Reading
+### Further Reading
 
 [1]. Yueng, Information Theory and Network Coding. [Link](http://www.amazon.com/Information-Theory-Network-Coding-Technology/dp/0387792333)
 
