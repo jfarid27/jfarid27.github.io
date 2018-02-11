@@ -126,7 +126,7 @@ Unfortunately, many engineers in an Agile system are given tasks described by pr
 count of daily logins". When building a system, one cannot see the connections between components well enough to justify building
 an abstraction layer, especially when the overall goal of the task is to produce a result and not to observe similarities to other code.
 This leads to bloated software, where many components are arguably doing similar things on state which could be compressed into a
-single abstraction. On top of this, as teams get large and engineers own feature areas, problems are exhascerbated by the reality that
+single abstraction. On top of this, as teams get large and engineers own feature areas, problems are exacerbated by the reality that
 many engineers are writing code that does similar things on state, but are unaware of other engineers' code.
 
 Algebraic design of declarative systems gives a familiar tool for engineers who wish to design more managable systems in a functional
