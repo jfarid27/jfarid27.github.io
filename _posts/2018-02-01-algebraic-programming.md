@@ -21,7 +21,7 @@ EventEmitters, and interfaces like Monads as declarative structures.
 A familiar connection between algebras and Promises exists by connecting ```then``` with ```+```. For example, in the code below,
 ```getAndTransformData``` is a combination of ```GetData + fetchResponse + transformResponse```. 
 
-```javascript
+~~~ javascript
 
 const fetchResponse = (response) => AsyncFetch(response.data.id)
   .then((innerResponse) => {
@@ -35,7 +35,7 @@ const transformResponse = (response) => {
 };
 
 const getAndTransformData = () => GetData("id").then(fetchResponse).then(transformResponse);
-```
+~~~
 
 The code above is familiar to anyone with training in algebras, and can be easily interpreted by other engineers. What is interesting,
 is that structurally, the level "above" the handlerFunctions is algebraic, while the level "of" the handlerFunctions is extremely
@@ -51,7 +51,7 @@ the Monad interface is described for List objects, and allows programmers to man
 ```haskell
 splitNegative x = [-x, x]
 
-translate10 x = [x + 10
+translate10 x = [x + 10]
 
 let results = [1, 2, 3] >>= splitNegative >>= translate10
 ```
