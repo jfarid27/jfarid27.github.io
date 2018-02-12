@@ -10,7 +10,7 @@ By this definition, all modern languages are imperative, since all modern langua
 can manipulate, but previous languages that did not have a separation between the computer's memory and a programs internal state,
 even a virtualized internal state, clearly were imperative.
 
-Because of the rise of imperative languages, formally the line between charaterizing a language as imperative or declarative is no
+Because of the rise of imperative languages, formally the line between characterizing a language as imperative or declarative is no
 longer relevant, and the non-formal definition of the designation of declarative or imperative as the difference between a program that
 describes "what" it does rather than "how" it does it reigns, giving the designation a *design* definition rather than a *formal* definition.
 This post explores the dichotomy of declarative vs imperative programs, identifying *algebraic* abstractions like Promises, 
