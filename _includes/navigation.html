@@ -22,7 +22,7 @@
 	{% for site in site.navigation %}
 	<script type="text/javascript">
 		setTimeout(function() {
-			$('.navigation .{{site.name}}').on('click', function() {
+			$('.navigation.{{site.name}}').on('click', function() {
 				console.log("Firing {{site.name}}");
 				dataLayer.push({
 					event: 'navigation',
