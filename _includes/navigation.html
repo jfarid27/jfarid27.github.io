@@ -15,10 +15,22 @@
         <div class="medium-6 columns">
        
           {% for site in site.navigation %}
-           <a href="{{site.url}}" class="small button">{{site.text}}</a>
+	  <a href="{{site.url}}" class="small button navigation {{site.name}}">{{site.text}}</a>
           {% endfor %}
 
         </div>
+	{% for site in site.navigation %}
+	<script type="text/javascript">
+		$('.navigation .{{site.name}}').on('click', function() {
+			dataLayer.push({
+				event: 'navigation',
+				data: {
+					'type': {{site.name}}
+				}
+			});
+		});
+        </script>
+	{% endfor %}
       </div>
     </div>
   <hr>

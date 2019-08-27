@@ -6,8 +6,10 @@ markdown: kramdown
 navigation:
 - text: Blog
   url: /index.html
+  name: index
 - text: About
   url: /about/index.html
+  name: about
 - text: Code
   url: https://github.com/jfarid27
-
+  code: code
