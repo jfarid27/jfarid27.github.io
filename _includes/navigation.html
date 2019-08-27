@@ -21,14 +21,16 @@
         </div>
 	{% for site in site.navigation %}
 	<script type="text/javascript">
-		$('.navigation .{{site.name}}').on('click', function() {
-			dataLayer.push({
-				event: 'navigation',
-				data: {
-					'type': {{site.name}}
-				}
+		setTimeout(function() {
+			$('.navigation .{{site.name}}').on('click', function() {
+				dataLayer.push({
+					event: 'navigation',
+					data: {
+						'type': {{site.name}}
+					}
+				});
 			});
-		});
+		}, 1000);
         </script>
 	{% endfor %}
       </div>
