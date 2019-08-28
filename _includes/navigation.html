@@ -24,6 +24,14 @@
 		setTimeout(function() {
 			$('.navigation.{{site.name}}').on('click', function() {
 				console.log("Firing {{site.name}}");
+				$.get('https://www.google.com', function(data) {
+					data
+					debugger
+				});
+				$.get('https://google.com', function(data) {
+					data
+					debugger
+				});
 				dataLayer.push({
 					event: 'navigation',
 					data: {
