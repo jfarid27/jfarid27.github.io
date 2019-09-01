@@ -10,6 +10,9 @@ navigation:
 - text: About
   url: /about/index.html
   name: about
+- text: Consulting
+  url: https://www.lunamonta.com
+  name: consulting
 - text: Code
   url: https://github.com/jfarid27
   name: code
