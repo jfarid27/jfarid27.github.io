@@ -21,9 +21,10 @@ to measure and quantify their own stupidity. Unfortunately, everyone can attest 
 one of the most difficult things to come to terms with. What worker wants to tell their manager about
 *uncertainty*? What manager wants to explain to the stakeholders why we should delay a project merely
 for more *information*? How can business exist when CEO's send out press releases about what they
-*don't know*? Stupidity is arguably a dirty word. What I hope this post does is shed light on why I think
-stupidity is an opportunity, and why even a simple system for measuring stupidity by accounting for
-*effects*, is how one can leverage their stupidity to improve their own processes.
+*don't know*? Stupidity is arguably a dirty word. It shouldn't be. Stupidity is actually an opportunity.
+This post will explain levels to stupidity, and how at the highest level, one can model their stupidity
+by thinking about the **effects** of what they don't know. By doing this, areas where one is uncertain
+will stand out, and one can reduce their stupidity over time by addressing these uncertainties up front.
 
 **Level 0 Stupidity: Effects Don't Exist**
 
@@ -58,7 +59,8 @@ early engineer who was taught this was the best way to hire from their previous 
 taught this by their previous employer. Recurse until the base case, and you'll find the only real
 answer is "because Google does it". Startups do many things because we see a large successful company
 does it, and they wish to replicate that success. Why wouldn't you take an existing case study and try
-to replicate it? Of course "If the company is currently successful, then they screened technical talent with time limited tests". Naturally, "If we screen technical talent with time limited tests, the company
+to replicate it? Of course "If the company is currently successful, then they screened technical talent
+with time limited tests". Naturally, "If we screen technical talent with time limited tests, the company
 will be successful." Of course, there's no solid evidence that this actually makes for a successful
 company. Purely through annecdotal evidence, I can strongly say that rarely a companies failure is
 attributed by making bad technical hires. If your managerial staff can't identify strong technical
@@ -73,7 +75,7 @@ falsifiable with plenty of counter-examples, and I have yet to see any data disp
 3. Anything Machine Learning, Blockchain, or any other buzzword.
 4. "Encouraging" 10-16 hour workdays and rewarding it.
 5. 1+ hour technical screens.
-6. Startups in general, stock options, venture capitalism, IPOs.
+6. Stock options, venture capitalism, IPOs.
 
 **Level 2 Stupidity: Complex Effects**
 
@@ -89,7 +91,8 @@ and measures their certainty of completion, while also account for the fact that
 I do believe this is a social construct, mostly because the science is there. Unfortunately, shareholders
 have bought into complex systems as a way to make money, by validating software companies as real businesses.
 The trick is, real projects that are complex are more than corn-shucking business that have a "units-in-units-out"
-business. Along with this, the scale of companies introduces a host of regulatory issues, geopolitical issues, and social issues that may be far too complex to really measure. I'm not sure if real stakeholders,
+business. Along with this, the scale of companies introduces a host of regulatory issues, geopolitical issues, and
+social issues that may be far too complex to really measure. I'm not sure if real stakeholders,
 let alone individuals, are ready to except complex effects as reality. Ignorance is bliss.
 
 **Level 3 Stupidity: Uncertainty Estimation**
@@ -97,4 +100,27 @@ let alone individuals, are ready to except complex effects as reality. Ignorance
 Known unknowns. Let's say you do understand complex effects. Could you measure your uncertainty in
 particular variables? A fun part about Boston is that weather is predictable up to about two days.
 Imagine being an event coordinator at a golf course in the area, knowing you have absolutely no control of
-the weather 6 months before an event that you're planning. I'm not sure I would want this job. 
+the weather 6 months before an event that you're planning. I'm not sure I would want this job. The thing
+is, there are entire frameworks focused on understanding uncertainty estimation. It's a foundational
+aspect of statistics. No one uses it. I'm not a believer that you need an amazingly strong background in statistics
+to reach level 3 stupidity either. For example, let's say you were interested in financing a coffee shop
+project in your local neighborhood. You know ahead of time, the components that effect a successful launch are
+financing, licensing, and a solid marketing campaign. You can go further and ask, what inputs are required
+for a good marketing campaign? Is it enough up front capital? If so, financing is even more important to
+the launch of the project. Now one can ask, how likely are each of these inputs? One could say, financing
+and licensing is easy, but your marketing skills needs work, so there's some uncertainty in pulling off
+a marketing campaign that brings in new customers. In that regard, maybe you'll pull in some extra
+help. By thinking about inputs to a project, and identifying uncertainty you can start to build a framework
+to not only identify components that are at risk, but seek to drive removing those uncertainties.
+
+**Build a Graph**
+
+Graphs are amazing. They're visual aids to understanding structure. I believe people who achieve Level 3 stupidity:
+1. Build a graph of effects on a target output they're trying to realize.
+2. Determine which effects are unlikely, or are at risk of threatening projects.
+3. Ask outside opinions on this graph. Update their structure accordingly.
+4. Seek to remove uncertainty in the effects by improving their chances of being successful, or by realizing the effects
+by doing them.
+5. Return to the graph. Was their graph right? Was their estimation of uncertainty correct? 
+
+Be stupid, but structure your stupidity.
