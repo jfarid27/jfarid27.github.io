@@ -12,7 +12,7 @@ the sides of the runways, to make a wooden hut for a man to sit in, with two woo
 like headphones and bars of bamboo sticking out like antennas--he's the controller--and they wait for
 the planes to land." But the planes never returned. So cargo cult science has the outward form of science
 but lacks what makes it truly scientific.*
-Superforecasting, Tetlock and Gardner
+- Superforecasting, Tetlock and Gardner.
 
 This post serves as a braindump of a situation which consistently rears its head in my career working with
 startups: A lack of understanding of levels of stupidity. One would expect that humans, after many years
