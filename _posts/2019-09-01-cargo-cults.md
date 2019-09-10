@@ -87,11 +87,11 @@ real interactions between variables, and understand their combination is the eff
 variables themselves.
 
 I don't have much to say about this, because I have yet to work on a team that breaks down problems,
-and measures their certainty of completion, while also account for the fact that projects may not work.
+measures their certainty of completion, while also accounting for the fact that projects may not work.
 I do believe this is a social construct, mostly because the science is there. Unfortunately, shareholders
 have bought into complex systems as a way to make money, by validating software companies as real businesses.
 The trick is, real projects that are complex are more than corn-shucking business that have a "units-in-units-out"
-business. Along with this, the scale of companies introduces a host of regulatory issues, geopolitical issues, and
+revenue models. Along with this, the scale of companies introduces a host of regulatory issues, geopolitical issues, and
 social issues that may be far too complex to really measure. I'm not sure if real stakeholders,
 let alone individuals, are ready to except complex effects as reality. Ignorance is bliss.
 
