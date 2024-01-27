@@ -33,10 +33,10 @@ me.
 A simplified model for lending when collateralized by volatile assets is that
 the system should try to optimize:
 
-    1. Selecting an interest rate to make lending profitable while accounting
-       for possible default.
-    2. Development of agreed upon liquidation terms where in the event of
-       default, collateral can be quickly sold to recuperate debt.
+1. Selecting an interest rate to make lending profitable while accounting for
+possible default.
+2. Development of agreed upon liquidation terms where in the event of default,
+collateral can be quickly sold to recuperate debt.
 
 While these may seem trivial, global lending rates are a competitive market
 where participants may undercut other lenders to gain market share. Also,
@@ -134,9 +134,9 @@ Using the Merton Model derived from the Black-Scholes equations, one can
 produce a closed form estimate of default probability for a particular lending
 agreement. This model utilizes:
 
-    - Loan To Value = Debt Value / Collateral Value (LTV)
-    - Expected Collateral Return Rate
-    - Collateral Volatility
+- Loan To Value = Debt Value / Collateral Value (LTV)
+- Expected Collateral Return Rate
+- Collateral Volatility
 
 While the specifics number of the risk-free rate and collateral volatility can
 be debated, since they do not reflect respectively the collateral's growth rate
@@ -149,12 +149,12 @@ For real time monitoring, one could generate a ruleset that identifies key
 metrics and calls the loan if metric limits are hit. In particular, metrics
 that should trigger loan recalls should include:
 
-    - An increase in default probability to a specific level holding volatility
-      fixed as collateral value drops.
-    - An increase in default probability when short-time frame volatility is
-      substituted with yearly volatility. 
-    - A change in default probability when substituting collateral's expected
-      growth rate with compared to the Risk-Free Rate. 
+- An increase in default probability to a specific level holding volatility
+  fixed as collateral value drops.
+- An increase in default probability when short-time frame volatility is
+  substituted with yearly volatility. 
+- A change in default probability when substituting collateral's expected
+  growth rate with compared to the Risk-Free Rate. 
 
 The benefits of this particular model is one can compare these probabilities in
 a tractible way. Rulesets defined by changes in probability make discussions
