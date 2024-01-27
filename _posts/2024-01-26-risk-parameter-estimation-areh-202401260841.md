@@ -1,5 +1,8 @@
---- layout : post title  : An Overview of Lending Parameter Estimation for
-Crypto Markets snip   : Risk Considerations for Crypto Protocols ---
+---
+layout : post 
+title  : An Overview of Lending Parameter Estimation for Crypto Markets
+snip   : Risk Considerations for Crypto Protocols
+---
 
 # Introduction
 
@@ -16,7 +19,7 @@ metrics for any new lending terms. Lastly, new avenues are discussed as
 possible options for credit operators that have appropriate capital, that are
 possibly under-explored opportunities in crypto-based credit markets. The
 overall goal is to explore crypto-credit markets for beginners, and generate
-interest in devlopment in new products that can serve these markets.
+interest in development in new products that can serve these markets.
 
 I am also available to join risk engineering and analytics teams in developing
 these products for protocol operators if interested. Feel free to reach out to
@@ -37,8 +40,8 @@ the system should try to optimize:
 
 While these may seem trivial, global lending rates are a competitive market
 where participants may undercut other lenders to gain market share. Also,
-volatile collateral may rapidly move against lenders where after liqudiation
-the debt may never be recouperated in full. The interest rate is in some sense
+volatile collateral may rapidly move against lenders where after liquidation
+the debt may never be recuperated in full. The interest rate is in some sense
 both insurance against default (risk premium) and a payment that charges a fee
 for general credit (time premium). The difficulty in the cryptocurrency space
 is compounded due to the extreme volatility on the upside and downside of both
@@ -66,7 +69,7 @@ price abstract refinement of data, computation, or capital allocation in the
 future. Some analysts model systems asserting they are informational
 commodities who's value is not dependent on cashflows but future refinement of
 goods that have downstream profits for purchasers, which adds a complex
-valudation dynamic in the supply chain of information processing and data
+valuation dynamic in the supply chain of information processing and data
 storage.
 
 Many cryptocurrencies can be argued as both an equity premium that sells a
@@ -211,7 +214,7 @@ Liquidity models of specific DeFi markets are not yet mature and mainstream. In
 particular, liquidity is linked to volatility and VAR since available liquidity
 soaks up asset sales and purchases, with large volumes trading in automated
 market making venues such as Uniswap or Curve. Issues arise with this
-automation, as Decentralized finance operators are aware of Just-In-Time
+automation, as decentralized finance operators are aware of Just-In-Time
 liquidity bots that serve to siphon MEV. Another factor are yield farming
 operations where protocols give additional value to market makers for providing
 token liquidity, giving rise to "mercinary capital" which may easily pull
@@ -235,11 +238,17 @@ engaging in a risk swap to offset potential losses.
 
 Risk assessments in crypto credit markets is a relatively new field with many
 hurdles to overcome. While the space does have high volatility, there is still
-much to be considered as the blockchain space is a data rich environment. There
-is no shortage of new metrics to add to a panel of risk indicators, and lots of
-opportunities. While this document serves to give a basic introduction, there
-are deeper risk modeling considerations that may be worth exploring for more
-mature systems. Prudent lending protocol users interested in risk frameworks
+much to be considered as the blockchain space is a data rich environment. This
+document lighted VAR/Volatility, the Merton Default Probability Model, and Risk
+tranches as possible options for credit risk assessments that ultimately
+determine lending rates. While these should be considered as a first step,
+jhere is no shortage of new metrics to add to a panel of risk indicators, and
+lots of opportunities.
+
+Along with this and the advent of the blockchain and AI systems, there are
+deeper risk modeling considerations that may be worth exploring for more well
+capitalized teams focused on assessing credit risk, and building quantitative
+risk systems. Prudent lending protocol users interested in risk frameworks
 should consider these basic options as a start. Operators engaging in DeFi
 lending markets should take these as baseline requirements at the start, and
 work to engineer their own in house automated risk operations.
