@@ -64,7 +64,7 @@ const useUserProgram = (id: string) => Effect.provideService(program, APIService
 })
 ```
 
-This is a simple program, right? It makes a decent call, now has a type of Effect<unknown, APIException, never> (success value, errors, and dependencies), and can by run?
+This is a simple program, right? It makes a decent call, now has a type of Effect<unknown, APIException, never> (success value, errors, and dependencies), and can run?
 
 Wrong. I've gotten good at writing effect with the help of AI and IDEs, but it's not actually
 finished. And yes, this chunk of code is huge. On top of this, I haven't even written an adapter
