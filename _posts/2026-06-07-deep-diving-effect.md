@@ -95,6 +95,11 @@ have to make all the decisions about edge cases, parsings, default values, and e
 which means inference doesn't really have a great deal of training data on Effect patterns yet.
 4. Is this Haskell at this point? Haskell developers have always been known for never getting anything done,
 because all their programs simply take forever to write and cover all possible conditions.
+5. This isn't a knock against Effect, but rather a realization that pure Javascript is generally bad,
+[software still sucks](https://www.stilldrinking.org/programming-sucks), and most of the programs
+written in the ecosystem are guaranteed to fail in production, since no one is writing systems with
+this level of verbosity to ensure the code is actually robust. This is why software is breaking all
+the time.
 
 While I'm excited that more people are talking about developing with Effect in mind, I'm also concerned
 that the language is just evolving to Java. At that point, why didn't we just include a JVM in every
