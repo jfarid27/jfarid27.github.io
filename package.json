@@ -1,17 +1,18 @@
 {
-  "name": "blog",
-  "version": "0.0.0",
-  "description": "jfarid27.github.io ==================",
-  "main": "index.js",
+  "name": "local-minima",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Minima — essays on software engineering, statistics, and the economics of technology.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "css":"lessc css/custom/src/style.less > css/custom/style.css"
+    "build": "jekyll build",
+    "serve": "jekyll serve --host 0.0.0.0",
+    "test": "jekyll build"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jfarid27/jfarid27.github.io.git"
   },
-  "author": "J. Farid",
+  "author": "Jalil Farid",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/jfarid27/jfarid27.github.io/issues"

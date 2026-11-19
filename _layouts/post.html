@@ -1,22 +1,69 @@
-<html>
-    {% include head.html %}
-    <body>
-    {% include tracking.html %}
-    {% include navigation.html %}
+---
+layout: default
+---
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
 
-    <div class="row">
-      <div class="medium-12 columns">
-        <div class="row">
+<article class="post">
+  <div class="container">
+    <header class="post-header">
+      <a class="back-link" href="/"><span aria-hidden="true">←</span> All essays</a>
 
-             {{content}}
+      <p class="eyebrow">
+        Essay <span class="sep">/</span>
+        {{ page.date | date: "%B %-d, %Y" }}
+        <span class="sep">/</span>
+        {{ minutes }} min read
+      </p>
 
-        </div>
+      <h1>{{ page.title | strip }}</h1>
+
+      {% if page.snip %}<p class="post-deck">{{ page.snip | strip }}</p>{% endif %}
+
+      <div class="post-meta">
+        <span>By {{ site.author }}</span>
+        <span class="tag">{{ page.date | date: "%Y" }}</span>
       </div>
+    </header>
+
+    <div class="post-wrap">
+      <div class="prose">
+        {{ content }}
+
+        <footer class="post-footer">
+          {% if page.previous or page.next %}
+          <nav class="post-nav" aria-label="More essays">
+            {% if page.next %}
+            <a href="{{ page.next.url }}">
+              <span class="dir">Newer</span>
+              <span class="name">{{ page.next.title | strip }}</span>
+            </a>
+            {% endif %}
+
+            {% if page.previous %}
+            <a class="{% if page.next %}next{% endif %}" href="{{ page.previous.url }}">
+              <span class="dir">Older</span>
+              <span class="name">{{ page.previous.title | strip }}</span>
+            </a>
+            {% endif %}
+          </nav>
+          {% endif %}
+
+          <a class="btn btn-ghost" href="/"><span aria-hidden="true">←</span> Back to all essays</a>
+        </footer>
+      </div>
+
+      <aside class="post-rail" aria-label="Article details">
+        <span class="rail-label">Published</span>
+        {{ page.date | date: "%b %-d, %Y" }}<br><br>
+        <span class="rail-label">Reading time</span>
+        {{ minutes }} minutes<br><br>
+        <span class="rail-label">Author</span>
+        {{ site.author }}<br><br>
+        <span class="rail-label">Contact</span>
+        <a href="mailto:{{ site.email }}">Email</a><br>
+        <a href="https://github.com/jfarid27" rel="noopener">GitHub</a>
+      </aside>
     </div>
-    {% include footer.html %}
-
-    </body>
-
-
-</html>
-
+  </div>
+</article>

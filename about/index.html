@@ -1,0 +1,150 @@
+---
+layout: default
+nav: about
+title: About
+description: Jalil Farid is a software engineer and consultant working where product, data, and strategy meet.
+---
+
+<section class="hero" style="padding-top:40px;padding-bottom:0">
+  <div class="container">
+    <div class="about-hero">
+      <div>
+        <p class="eyebrow">About <span class="sep">/</span> {{ site.author }}</p>
+        <h1>Jalil<br>Farid</h1>
+        <p class="page-lead">
+          Software engineer, consultant, and occasional essayist. I build systems
+          that turn messy data into decisions — then write about what I learned
+          along the way.
+        </p>
+      </div>
+
+      <div class="about-portrait" aria-hidden="true">
+        <img src="/assets/contour.svg" alt="">
+        <span class="monogram">JF</span>
+        <span class="corner">Local Minima</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="about-layout">
+    <div class="prose">
+      <p>
+        I'm a software engineer and consultant with a career spent at the interface
+        between business, customers, and computers. Most of my work has been
+        end-to-end product engineering: understanding the problem, shaping the
+        system, shipping it, and staying around long enough to see whether it
+        actually worked.
+      </p>
+
+      <p>
+        I studied at Rutgers University and have been writing software
+        professionally ever since — across early-stage startups, product teams, and
+        independent consulting engagements. Over time I found that my real
+        specialty is developing <strong>solutions</strong> rather than
+        <strong>features</strong>: the ambiguous, cross-cutting problems that don't
+        arrive with a ticket attached.
+      </p>
+
+      <h2>What I do</h2>
+
+      <p>
+        Today my work is a mix of engineering, applied statistics, and strategy.
+        Through <a href="https://www.lunamonta.com" rel="noopener">Lunamonta
+        Technologies</a>, I consult with early-stage teams on decentralized
+        finance, data operations, and product delivery. The common thread is
+        helping people make better decisions with the systems and data they
+        already have.
+      </p>
+
+      <div class="practice-grid">
+        <div class="practice">
+          <span class="idx">01</span>
+          <h3>Product &amp; platform engineering</h3>
+          <p>End-to-end delivery for small teams: architecture, implementation, and the unglamorous work of making it maintainable.</p>
+        </div>
+        <div class="practice">
+          <span class="idx">02</span>
+          <h3>Data &amp; statistical modeling</h3>
+          <p>Bayesian reasoning, risk parameter estimation, and pipelines that keep analysis honest as the data changes.</p>
+        </div>
+        <div class="practice">
+          <span class="idx">03</span>
+          <h3>Protocol &amp; market design</h3>
+          <p>Incentives, lending parameters, and the economics underneath DeFi products — evaluated before they are deployed.</p>
+        </div>
+      </div>
+
+      <h2>How I work</h2>
+
+      <p>
+        I lean toward data-oriented, iterative approaches: instrument first, form a
+        hypothesis, ship something small, and let the results argue for themselves.
+        I'm equally happy deep in a type system or a statistical model, and I care
+        about code that makes the right thing the easy thing.
+      </p>
+
+      <p>
+        Lately that has meant working with <a href="https://effect.website/" rel="noopener">Effect</a>
+        and TypeScript, modeling risk for crypto lending markets, and writing about
+        the craft of software on this site. My essays tend to start as notes to
+        myself; publishing them is a way of finishing the thought.
+      </p>
+
+      <div class="pull-quote">
+        <p>&ldquo;It&rsquo;s in words that the magic is — Abracadabra, Open Sesame, and the rest — but the magic words in one story aren&rsquo;t magical in the next. The real magic is to understand which words work, and when, and for what.&rdquo;</p>
+        <cite>John Barth, Chimera</cite>
+      </div>
+
+      <h2>Selected writing</h2>
+
+      <ul class="post-list" style="margin-top:24px">
+        {% for post in site.posts limit:3 %}
+        <li class="post-item">
+          <a href="{{ post.url }}">
+            <span class="num">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
+            <span class="year">{{ post.date | date: "%Y" }}</span>
+            <span>
+              <span class="title">{{ post.title | strip }}</span>
+              {% if post.snip %}<span class="snip">{{ post.snip | strip }}</span>{% endif %}
+            </span>
+            <span class="go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+
+      <div class="contact-panel">
+        <div>
+          <h2>Have a problem worth solving?</h2>
+          <p>
+            I take on a small number of consulting engagements at a time —
+            usually data-heavy products, protocol design, or teams that need a
+            senior engineer to help find the shape of the problem.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="mailto:{{ site.email }}">Start a conversation <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+
+    <aside class="about-aside">
+      <h2>At a glance</h2>
+      <ul class="fact-list">
+        <li><span class="k">Education</span>Rutgers University</li>
+        <li><span class="k">Focus</span>Software engineering, applied statistics, strategy</li>
+        <li><span class="k">Consulting</span>Lunamonta Technologies</li>
+        <li><span class="k">Writing since</span>2014</li>
+      </ul>
+
+      <h2>Elsewhere</h2>
+      <ul class="fact-list">
+        <li><a href="https://github.com/jfarid27" rel="noopener">GitHub ↗</a></li>
+        <li><a href="https://www.lunamonta.com" rel="noopener">Lunamonta ↗</a></li>
+        <li><a href="mailto:{{ site.email }}">Email ↗</a></li>
+      </ul>
+
+      <a class="btn btn-ghost" href="mailto:{{ site.email }}">Get in touch</a>
+    </aside>
+  </div>
+</div>
