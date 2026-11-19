@@ -1,27 +1,24 @@
-<div id="header">
+<header class="site-header" id="site-header">
+  <div class="container nav-inner">
+    <a class="brand" href="/">
+      <span class="brand-mark" aria-hidden="true">LM</span>
+      <span>{{ site.name }}</span>
+    </a>
 
-  <div class="row">
-    <div class="medium-12 columns">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <div class="row">
-        <div class="medium-6 columns">
-          <header id="banner">
-            <h1>
-              <a href="/">{{site.name}}</a>
-            </h1>
-            <h5>{{site.description}}</h5>
-          </header>
-        </div>
-        <div class="medium-6 columns">
-       
-          {% for site in site.navigation %}
-	  <a href="{{site.url}}" class="small button navigation {{site.name}}">{{site.text}}</a>
-          {% endfor %}
-
-        </div>
-      </div>
-    </div>
-  <hr>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      {% for item in site.navigation %}
+        <a class="nav-link {{ item.name }}{% if page.nav == item.name %} is-active{% endif %}"
+           href="{{ item.url }}"
+           {% if page.nav == item.name %}aria-current="page"{% endif %}
+           {% if item.url contains 'http' %}rel="noopener"{% endif %}>{{ item.text }}</a>
+      {% endfor %}
+      <a class="btn btn-primary nav-cta" href="mailto:{{ site.email }}">Get in touch</a>
+    </nav>
   </div>
-</div>
-
+</header>

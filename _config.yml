@@ -1,14 +1,18 @@
 name: Local Minima
-description: My personal repository of musings and ideas...
-pygments: true
+description: Essays on software engineering, statistics, and the economics of technology.
+url: https://jfarid27.github.io
+author: Jalil Farid
+email: jrab227@gmail.com
+
 markdown: kramdown
+highlighter: rouge
 
 navigation:
-- text: Blog
-  url: /index.html
+- text: Writing
+  url: /
   name: index
 - text: About
-  url: /about/index.html
+  url: /about/
   name: about
 - text: Consulting
   url: https://www.lunamonta.com
@@ -16,3 +20,16 @@ navigation:
 - text: Code
   url: https://github.com/jfarid27
   name: code
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    nav: index
+
+exclude:
+- README.md
+- LICENSE
+- package.json
+- node_modules

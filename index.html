@@ -1,19 +1,130 @@
 ---
-
-layout : default
-title  : Local Minima
-
+layout: default
+nav: index
+kicker: Writing
 ---
 
-<ul id="post-listing" class="side-nav">
-  {% for post in site.posts %}
-  <li>
-    <h2 class="post-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      
-    </h2>
-    <h3 class="post-subtitle">{{ post.snip }}</h3><span class="date">{{ post.date | date_to_string }}</span>
-    <hr>
-  </li>
-  {% endfor %}
-</ul>
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">A working notebook <span class="sep">/</span> est. 2014</p>
+
+        <h1 class="hero-title">
+          The view from a<br>
+          <span class="accent">local minimum.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Essays on type systems, statistics, and the economics of software.
+          Written from first principles, usually after the documentation runs out.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#writing">Read the latest <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="/about/">About me</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <img src="/assets/contour.svg" alt="" width="900" height="900" loading="eager">
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="value">{{ site.posts.size }}</span>
+        <span class="label">Essays published</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">2014</span>
+        <span class="label">Writing since</span>
+      </div>
+      <div class="hero-stat">
+        <span class="value">Software · Data · Markets</span>
+        <span class="label">Recurring themes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="writing">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">The archive <span class="sep">/</span> {{ site.posts.size }} entries</p>
+        <h2 class="section-title">Latest writing</h2>
+      </div>
+      <a class="section-link" href="#writing">Newest first</a>
+    </div>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li class="post-item">
+        <a href="{{ post.url }}">
+          <span class="num">{{ forloop.index | prepend: "0" | slice: -2, 2 }}</span>
+          <span class="year">{{ post.date | date: "%Y" }}</span>
+          <span>
+            <span class="title">{{ post.title | strip }}</span>
+            {% if post.snip %}<span class="snip">{{ post.snip | strip }}</span>{% endif %}
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Themes</p>
+        <h2 class="section-title">What I keep writing about</h2>
+      </div>
+    </div>
+
+    <div class="practice-grid">
+      <div class="practice">
+        <span class="idx">01</span>
+        <h3>Type systems &amp; correctness</h3>
+        <p>Effect, TypeScript, and the quiet craft of making invalid states impossible to represent.</p>
+      </div>
+      <div class="practice">
+        <span class="idx">02</span>
+        <h3>Statistics &amp; risk</h3>
+        <p>Bayesian thinking, parameter estimation, and how to make decisions when the data is thin.</p>
+      </div>
+      <div class="practice">
+        <span class="idx">03</span>
+        <h3>Markets &amp; protocols</h3>
+        <p>DeFi infrastructure, incentive design, and the economics underneath the software.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-teaser">
+  <div class="container">
+    <div class="about-teaser-grid">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>I work where systems, data, and <em>decisions</em> meet.</h2>
+      </div>
+      <div>
+        <p>
+          I'm Jalil Farid — a software engineer and consultant with a soft spot for
+          problems that don't fit neatly into a backlog. My work sits between product
+          engineering, applied statistics, and strategy, with a long-running focus on
+          decentralized finance and data-heavy systems.
+        </p>
+        <p>
+          This blog is where I think in public: notes on the tools, models, and
+          mental frameworks I keep coming back to.
+        </p>
+        <a class="more" href="/about/">More about me <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
